@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Início do Dia</title>
+  <style>
+    body { font-family: Arial; background: #f3f3f3; padding: 40px; }
+    form { background: white; padding: 30px; border-radius: 12px; max-width: 500px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 8px; }
+    button { margin-top: 20px; padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 8px; cursor: pointer; }
+    button:hover { background: #218838; }
+  </style>
+</head>
+<body>
+  <form action="https://script.google.com/macros/s/AKfycbybjL7EFMCiD3gojLOpkGdo3d1ulZcO25LPH6irj6_UVwLUnkdirYcoXSKFAPgF4gNS/exec" method="POST">
+    <h2>Planejamento - Início do Dia</h2>
+
+    <label>Meu nome:</label>
+    <select name="nome" required>
+      <option value="" disabled selected>Selecione seu nome</option>
+      <option value="Camila">Camila</option>
+      <option value="Gabriela">Gabriela</option>
+      <option value="Andry">Andry</option>
+      <option value="Fernanda">Fernanda</option>
+      <option value="Julia">Julia</option>
+      <option value="Pepe">Pepe</option>
+      <option value="Maite">Maite</option>
+      <option value="Daiane">Daiane</option>
+      <option value="Mirela">Mirela</option>
+    </select>
+
+    <label>Minha previsão de Ganhos do dia:</label>
+    <input name="previsao_ganhos" type="number" required>
+
+    <label>Minha previsão de Transmitidos do dia:</label>
+    <input name="previsao_transmitidos" type="number" required>
+
+    <button type="submit">Enviar Planejamento</button>
+  </form>
+</body>
+</html>
